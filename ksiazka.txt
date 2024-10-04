@@ -1,0 +1,9 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        String autor = "J.K Rowling";
+        String tytul ="Harry Potter";
+        String myStr = "%s to najlepsza ksiazka napisana przez %s";
+        String result = String.format(myStr,tytul,autor);
+        System.out.println(result);
+    }
+}

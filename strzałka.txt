@@ -1,0 +1,61 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        int i = 0;
+        int a = 0;
+        int b = 0;
+        int j = 0;
+        for(a=0;a<3;a++){
+        for(i=0;i<10;i++)
+        {
+        System.out.print("  ");
+        }
+        System.out.print(" *");
+        if(a==0){
+            System.out.println("");
+        }
+        if(a==1){
+            System.out.println(" *");
+        }
+        if(a==2){
+            System.out.print(" *");
+            System.out.println(" *");
+        }
+        }
+         for(a=0;a<3;a++){
+        for(i=0;i<10;i++)
+        {
+        System.out.print(" *");
+        }
+        System.out.print(" *");
+        System.out.print(" *");
+        System.out.print(" *");
+        System.out.print(" *");
+        if(a==0){
+            System.out.println("");
+        }
+        if(a==1){
+            System.out.println(" *");
+        }
+        if(a==2){
+            System.out.println("");
+        }
+        }
+        for(a=0;a<3;a++){
+        for(i=0;i<10;i++)
+        {
+        System.out.print("  ");
+        }
+        System.out.print(" *");
+        if(a==0){
+            System.out.print(" *");
+            System.out.println(" *");
+        }
+        if(a==1){
+            System.out.println(" *");
+        }
+        if(a==2){
+            System.out.println("");
+        }
+        }
+    }
+}

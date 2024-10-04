@@ -1,0 +1,10 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        String a = "banan";
+        String b = "pomidor";
+        String c = "csgo";
+        String myStr = "Grzesiek nie wiedzial dlaczego %s jest tak drapieznym %s mimo, ze jego %s na to nie wskazuje";
+        String result = String.format(myStr,a,b,c);
+        System.out.println(result);
+    }
+}

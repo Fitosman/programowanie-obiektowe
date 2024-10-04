@@ -1,0 +1,28 @@
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String nazwa = "Tomasz Jakubiak";
+        System.out.println(nazwa);
+        System.out.println(nazwa.length());
+        String ala = "Ala";
+        String ma = "ma";
+        String kota = "kota";
+        String zdanie = String.join(" ", ala, ma, kota);
+        System.out.println(zdanie);
+    }
+}
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String ala = "Ala";
+        String ma = "ma";
+        String kota = "kota";
+        String zdanie = String.join(" ", ala, ma, kota);
+        System.out.println(zdanie);
+        System.out.println(zdanie.replace('a', 'e'));
+        System.out.println(zdanie.toUpperCase());
+        System.out.println(zdanie.toLowerCase());
+    }
+}

@@ -1,0 +1,8 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        String a = "wodrze";
+        String myStr = "Dzisiaj jest (%d-%d-%d) godzina (%d:%d:%d)";
+        String result = String.format(myStr,12,10,2024,15,12,10);
+        System.out.println(result);
+    }
+}

@@ -1,0 +1,26 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        int a = 54;
+        char b = (char) a;
+        System.out.println(b);
+        a = 103;
+        b = (char) a;
+        System.out.println(b);
+        a = 241;
+        b = (char) a;
+        System.out.println(b);
+        a = 67;
+        b = (char) a;
+        System.out.println(b);
+        a = 9999;
+        b = (char) a;
+        System.out.println(b);
+        String txt = "Tomasz Jakubiak";
+        a = txt.length();
+        b = (char) a;
+        System.out.println(b);
+        a = 174676;
+        b = (char) a;
+        System.out.println(b);
+    }
+}

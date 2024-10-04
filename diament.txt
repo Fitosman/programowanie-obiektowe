@@ -1,0 +1,93 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int i = 0;
+        int a = 0;
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        for(i=0;i<1;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        for(i=0;i<2;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        for(i=0;i<3;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        System.out.print(" ");
+        for(i=0;i<4;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        for(i=0;i<5;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        for(i=0;i<6;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        for(i=0;i<5;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        System.out.print(" ");
+        for(i=0;i<4;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        for(i=0;i<3;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        for(i=0;i<2;i++)
+        {
+            System.out.print(" *");
+        }
+        System.out.println("");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        System.out.print(" ");
+        for(i=0;i<1;i++)
+        {
+            System.out.print(" *");
+        }
+}
+}

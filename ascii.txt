@@ -1,0 +1,25 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        char a = 'A';
+        int b = a;
+        System.out.println(b);
+        char c = '!';
+        int d = c;
+        System.out.println(d);
+        char e = '@';
+        int f = e;
+        System.out.println(f);
+        char g = '>';
+        int h = g;
+        System.out.println(h);
+        char i = '~';
+        int j = i;
+        System.out.println(j);
+        char k = '\n';
+        int l = k;
+        System.out.println(l);
+        char m = '\b';
+        int n = m;
+        System.out.println(n);
+    }
+}

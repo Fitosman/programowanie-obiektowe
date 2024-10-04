@@ -1,0 +1,8 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        String a = "wodrze";
+        String myStr = "%s%s%s%s%s";
+        String result = String.format(myStr,a,a,a,a,a);
+        System.out.println(result);
+    }
+}

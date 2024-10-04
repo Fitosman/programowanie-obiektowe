@@ -1,0 +1,19 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        char b = 'a';
+        int a = b;
+        char c = 'z';
+        int z = c;
+        System.out.println("Male litery sa w przedziale: " + a + "-" + z);
+        char x = 'A';
+        int y = x;
+        char i = 'Z';
+        int j = i;
+        System.out.println("Duze litery sa w przedziale: " + y + "-" + j);
+        char aa = '0';
+        int bb = aa;
+        char cc = '9';
+        int dd = cc;
+        System.out.println("Cyfry sa w przedziale: " + bb + "-" + dd);
+    }
+}
