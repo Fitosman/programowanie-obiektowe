@@ -1,0 +1,134 @@
+public class Main {
+    public static int[] generujTablice(int n, int minWartosc, int maxWartosc)
+    {
+        int[] tablica = new int[n];
+        for(int i=0; i<tablica.length; i++)
+        {
+            tablica[i] = minWartosc + (int)(Math.random()*((maxWartosc-minWartosc)+1));
+            //System.out.print(tablica[i]+"\n");
+        }
+        return tablica;
+    }
+
+    public static double[] generujZakres(int n, int minWartosc, int maxWartosc)
+    {
+        double[] tablica = new double[n];
+        double temp = maxWartosc-minWartosc;
+        temp = temp/(n-1);
+        for(int i=1; i<tablica.length; i++)
+        {
+            tablica[0]=minWartosc;
+            tablica[i]= tablica[i-1]+temp;
+        }
+        return tablica;
+    }
+    /*public static void wypiszTablice(int[][] tab,int n,int m)
+    {
+        tab = new int[n][m];
+        for(int i =0; i<n; i++)
+        {
+            for(int j=0; j<m; j++)
+            {
+                tab[i][j] = (int)(Math.random()*((10)+1));
+                System.out.print(tab[i][j]);
+            }
+        }
+    }*/
+
+    public static int ileNieparzystych(int[] tab)
+    {
+        int wynik=0;
+        for(int i=0;i<tab.length;i++)
+        {
+            if(tab[i]%2!=0)
+            {
+                wynik++;
+            }
+        }
+        return wynik;
+    }
+
+    public static int ileParzystych(int[] tab)
+    {
+        int wynik=0;
+        for(int i=0;i<tab.length;i++)
+        {
+            if(tab[i]%2==0)
+            {
+                wynik++;
+            }
+        }
+        return wynik;
+    }
+
+    public static int ileDodatnich(int[] tab)
+    {
+        int wynik=0;
+        for(int i=0;i<tab.length;i++)
+        {
+            if(tab[i]>0)
+            {
+                wynik++;
+            }
+        }
+        return wynik;
+    }
+
+    public static int ileUjemnych(int[] tab)
+    {
+        int wynik=0;
+        for(int i=0;i<tab.length;i++)
+        {
+            if(tab[i]<0)
+            {
+                wynik++;
+            }
+        }
+        return wynik;
+    }
+
+    public static int Zerowych(int[] tab)
+    {
+        int wynik=0;
+        for(int i=0;i<tab.length;i++)
+        {
+            if(tab[i]==0)
+            {
+                wynik++;
+            }
+        }
+        return wynik;
+    }
+
+    /*public static int ileMaxymalnych(int[] tab)
+    {
+        int wynik=0;
+        int temp=0;
+        for(int i=0;i<tab.length;i++)
+        {
+            if(tab[i]>temp)
+            {
+                temp = 0;
+                temp++;
+            }
+            if(tab[i]==temp)
+            {
+                temp++;
+            }
+        }
+        wynik = temp;
+        return wynik;
+    }*/
+
+    public static void main(String[] args) {
+        int n = 4;
+        int min = 1;
+        int max = 6;
+        /*double[] tab = generujZakres(n,min,max);
+        //int[] tablica = generujTablice(n,min,max);
+        for(int i=0;i<tab.length;i++)
+        {
+            System.out.println(tab[i]);
+        }*/
+    }
+}
