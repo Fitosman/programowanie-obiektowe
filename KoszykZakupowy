@@ -23,6 +23,15 @@ public class KoszykZakupowy {
             System.out.println(nazwa.iloscwkoszyku);
         }
     }
+    public static int obliczCalkowitaWartosc()
+    {
+        int suma = 0;
+        for (int i = 0; i < lista.size(); i++) {
+            Produkt nazwa = (Produkt) lista.get(i);
+            suma += nazwa.iloscwkoszyku*nazwa.getCena();
+        }
+        return suma;
+    }
 
     public static void main(String[] args) {
         Produkt banan = new Produkt();
@@ -49,5 +58,6 @@ public class KoszykZakupowy {
         dodajProdukt(czeresnie,6);
         dodajProdukt(herbata,4);
         wyswietlZawartoscKoszyka();
+        System.out.println(obliczCalkowitaWartosc());
     }
 }
