@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class KoszykZakupowy {
+    public static List lista = new ArrayList();
+    public int wartosckoszyka=0;
+    public static void dodajProdukt(Produkt nazwa, int ilosc)
+    {
+        if (nazwa.getIloscNaMagazynie() < ilosc) {
+            System.out.println("Wrong input");
+        }
+        else {
+            int a;
+            nazwa.iloscwkoszyku = nazwa.iloscwkoszyku + ilosc;
+            a = nazwa.getIloscNaMagazynie() - nazwa.iloscwkoszyku;
+            nazwa.setIloscNaMagazynie(a);
+        }
+    }
+    public static void wyswietlZawartoscKoszyka() {
+        for (int i = 0; i < lista.size(); i++) {
+            Produkt nazwa = (Produkt) lista.get(i);
+            System.out.println(nazwa.getNazwa());
+            System.out.println(nazwa.iloscwkoszyku);
+        }
+    }
+
+    public static void main(String[] args) {
+        Produkt banan = new Produkt();
+        Produkt czeresnie = new Produkt();
+        Produkt herbata = new Produkt();
+
+        lista.add(banan);
+        lista.add(czeresnie);
+        lista.add(herbata);
+
+        banan.setCena(5);
+        banan.setNazwa("Banan");
+        banan.setIloscNaMagazynie(20);
+
+        czeresnie.setCena(8);
+        czeresnie.setNazwa("Czeresnie");
+        czeresnie.setIloscNaMagazynie(7);
+
+        herbata.setCena(12);
+        herbata.setNazwa("Herbata");
+        herbata.setIloscNaMagazynie(14);
+
+        dodajProdukt(banan,5);
+        dodajProdukt(czeresnie,6);
+        dodajProdukt(herbata,4);
+        wyswietlZawartoscKoszyka();
+    }
+}
