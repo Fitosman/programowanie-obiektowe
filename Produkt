@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Produkt {
+    public String nazwa;
+    public int cena;
+    public int iloscNaMagazynie;
+    public int iloscwkoszyku=0;
+    public String wyswietlInformacje() {
+        return "Produkt " + nazwa + " kosztuje " + cena + ",na magazynie jest " + iloscNaMagazynie;
+    }
+
+    public void dodajDoMagazynu(int ilosc){
+        iloscNaMagazynie = iloscNaMagazynie + ilosc;
+    }
+    public void usunZMagazynu(int ilosc){
+        if (ilosc <= iloscNaMagazynie & ilosc > 0) {
+            iloscNaMagazynie = iloscNaMagazynie - ilosc;
+        }
+        else {
+            System.out.println("Error: wrong input");
+        }
+    }
+    public static int scannerInt(){
+        Scanner n = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Wpisz liczbe: ");
+        int ilosc = n.nextInt();
+        return ilosc;
+    }
+    public void setCena(int nowaCena){
+        cena = nowaCena;
+    }
+    public void setIloscwkoszyku(int nowaCena){
+        iloscwkoszyku = nowaCena;
+    }
+    public int getIloscwkoszyku(){
+        return iloscwkoszyku;
+    }
+    public void setIloscNaMagazynie(int nowaCena){
+        iloscNaMagazynie = nowaCena;
+    }
+    public int getIloscNaMagazynie(){
+        return iloscNaMagazynie;
+    }
+    public int getCena() { // 4
+        return cena;
+    }
+    public void setNazwa(String nowaNazwa) { // 5
+        nazwa = nowaNazwa;
+    }
+    public String getNazwa() { // 6
+        return nazwa;
+    }
+    public static void main(String[] args) {
+        Produkt produkt = new Produkt();
+        produkt.nazwa = "jablko";
+        produkt.cena = 10;
+        produkt.iloscNaMagazynie = 5;
+        System.out.println(produkt.wyswietlInformacje());
+        produkt.dodajDoMagazynu(produkt.scannerInt());
+        System.out.println(produkt.wyswietlInformacje());
+        produkt.usunZMagazynu(produkt.scannerInt());
+        System.out.println(produkt.wyswietlInformacje());
+    }
+}
