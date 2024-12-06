@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        Produkt banan = new Produkt("Banan", 10 , 5);
+        Produkt jablko = new Produkt("Jablko", 6 , 12);
+        Produkt czeresnie = new Produkt("Czeresnie", 12 , 8);
+        Produkt wisnie = new Produkt("Wisnie", 8 , 39);
+        //banan.wyswietlInformacje();
+
+        ArrayList<Produkt> koszykZakupowy = new ArrayList<>();
+        koszykZakupowy.add(banan);
+        koszykZakupowy.add(jablko);
+        koszykZakupowy.add(czeresnie);
+        koszykZakupowy.add(wisnie);
+
+        KoszykZakupowy koszyk = new KoszykZakupowy(koszykZakupowy);
+        koszyk.dodajProdukt(banan,4);
+        //koszyk.wyswietlZawartoscKoszyka();
+        //koszyk.obliczCalkowitaWartosc();
+
+        Zamowienie zamowienie1 = new Zamowienie(koszyk);
+        zamowienie1.ustawStatusZamowienia("da");
+        //zamowienie1.wyswietlZamowienie();
+
+        Klient klient1 = new Klient("Mariusz","Pudzianowski");
+        klient1.dodajZamowienie(zamowienie1);
+        klient1.wyswietlHistorieZamowien();
+    }
+}
