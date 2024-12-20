@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        Elf elf1 = new Elf("Darek", 22, "stan1");
+        Elf elf2 = new Elf("Mariusz",43,"stan2");
+        Elf elf3 = new Elf("Kamil", 38, "stan1");
+        elf1.przedstawSie();
+        ArrayList<Elf> lista = new ArrayList<>();
+        lista.add(elf1);
+        lista.add(elf2);
+        Fabryka listaElfow = new Fabryka(lista);
+        listaElfow.dodajPracownika(elf3);
+        listaElfow.najstarszyPracownik();
+        ArrayList<Renifer> listaReniferow = new ArrayList<>();
+        Sanie sanie = new Sanie(listaReniferow);
+        Renifer renifer1 = new Renifer("Rudolf",100);
+        Renifer renifer2 = new Renifer("Wariat",999);
+        System.out.println(renifer1.getPredkosc());
+        renifer1.nakarmRenifera();
+        System.out.println(renifer1.getPredkosc());
+        sanie.dodajRenifera(renifer2);
+        sanie.dodajRenifera(renifer1);
+        sanie.najwolnieszyRenifer();
+        System.out.println(sanie.sumaPredkosci());
+    }
+}
