@@ -1,0 +1,8 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+        Vehicle.Car car1 = new Vehicle.Car("BMW","M3",5);
+        Converter.CurrencyConverter converter = new Converter.CurrencyConverter();
+        System.out.println(converter.convertToUSD(100));
+    }
+}
